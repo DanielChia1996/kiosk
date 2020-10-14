@@ -1,0 +1,101 @@
+C:\Users\bluewood\Documents\Visual Studio 2012\Projects\EventCheckIn\EventCheckIn\bin\EventCheckIn.dll
+C:\Users\bluewood\Documents\Visual Studio 2012\Projects\EventCheckIn\EventCheckIn\bin\EventCheckIn.pdb
+C:\Users\bluewood\Documents\Visual Studio 2012\Projects\EventCheckIn\EventCheckIn\obj\Release\EventCheckIn.dll
+C:\Users\bluewood\Documents\Visual Studio 2012\Projects\EventCheckIn\EventCheckIn\obj\Release\EventCheckIn.pdb
+C:\Users\bluewood\Desktop\Projects\EventCheckIn\EventCheckIn\bin\EventCheckIn.dll
+C:\Users\bluewood\Desktop\Projects\EventCheckIn\EventCheckIn\bin\EventCheckIn.pdb
+C:\Users\bluewood\Desktop\Projects\EventCheckIn\EventCheckIn\obj\Release\EventCheckIn.dll
+C:\Users\bluewood\Desktop\Projects\EventCheckIn\EventCheckIn\obj\Release\EventCheckIn.pdb
+C:\Users\bluewood\Desktop\Projects\EventCheckIn 7.25.14 Modified interface and buttons for iPad\EventCheckIn\bin\EventCheckIn.dll
+C:\Users\bluewood\Desktop\Projects\EventCheckIn 7.25.14 Modified interface and buttons for iPad\EventCheckIn\bin\EventCheckIn.pdb
+C:\Users\bluewood\Desktop\Projects\EventCheckIn 7.25.14 Modified interface and buttons for iPad\EventCheckIn\obj\Release\EventCheckIn.dll
+C:\Users\bluewood\Desktop\Projects\EventCheckIn 7.25.14 Modified interface and buttons for iPad\EventCheckIn\obj\Release\EventCheckIn.pdb
+C:\Users\bluewood\Desktop\Projects\EventCheckIn\EventCheckIn\obj\Release\EventCheckIn.csprojResolveAssemblyReference.cache
+C:\Users\bluewood\Desktop\Projects\Kiosk\EventCheckIn\bin\EventCheckIn.dll
+C:\Users\bluewood\Desktop\Projects\Kiosk\EventCheckIn\bin\EventCheckIn.pdb
+C:\Users\bluewood\Desktop\Projects\Kiosk\EventCheckIn\obj\Release\EventCheckIn.csprojResolveAssemblyReference.cache
+C:\Users\bluewood\Desktop\Projects\Kiosk\EventCheckIn\obj\Release\EventCheckIn.dll
+C:\Users\bluewood\Desktop\Projects\Kiosk\EventCheckIn\obj\Release\EventCheckIn.pdb
+C:\Users\bluewood\Desktop\Projects\Kiosk\EventCheckIn\bin\EventCheckIn.XmlSerializers.dll
+C:\Users\bluewood\Desktop\Projects\Kiosk\EventCheckIn\obj\Release\EventCheckIn.XmlSerializers.dll
+C:\Users\javier.garza\Documents\Visual Studio 2010\Projects\Kiosk\EventCheckIn\bin\EventCheckIn.dll
+C:\Users\javier.garza\Documents\Visual Studio 2010\Projects\Kiosk\EventCheckIn\bin\EventCheckIn.XmlSerializers.dll
+C:\Users\javier.garza\Documents\Visual Studio 2010\Projects\Kiosk\EventCheckIn\bin\EventCheckIn.pdb
+C:\Users\javier.garza\Documents\Visual Studio 2010\Projects\Kiosk\EventCheckIn\obj\Release\EventCheckIn.csprojResolveAssemblyReference.cache
+C:\Users\javier.garza\Documents\Visual Studio 2010\Projects\Kiosk\EventCheckIn\obj\Release\EventCheckIn.dll
+C:\Users\javier.garza\Documents\Visual Studio 2010\Projects\Kiosk\EventCheckIn\obj\Release\EventCheckIn.pdb
+C:\Users\javier.garza\Documents\Visual Studio 2010\Projects\Kiosk\EventCheckIn\obj\Release\EventCheckIn.XmlSerializers.dll
+C:\Users\javier.garza\Documents\Visual Studio 2010\Projects\Kiosk\EventCheckIn\bin\EventCheckIn.dll.config
+C:\Users\javier.garza\Documents\Visual Studio 2015\Projects\Kiosk\EventCheckIn\bin\EventCheckIn.dll
+C:\Users\javier.garza\Documents\Visual Studio 2015\Projects\Kiosk\EventCheckIn\bin\EventCheckIn.XmlSerializers.dll
+C:\Users\javier.garza\Documents\Visual Studio 2015\Projects\Kiosk\EventCheckIn\bin\EventCheckIn.pdb
+C:\Users\javier.garza\Documents\Visual Studio 2015\Projects\Kiosk\EventCheckIn\obj\Release\EventCheckIn.csprojResolveAssemblyReference.cache
+C:\Users\javier.garza\Documents\Visual Studio 2015\Projects\Kiosk\EventCheckIn\obj\Release\EventCheckIn.dll
+C:\Users\javier.garza\Documents\Visual Studio 2015\Projects\Kiosk\EventCheckIn\obj\Release\EventCheckIn.pdb
+C:\Users\javier.garza\Documents\Visual Studio 2015\Projects\Kiosk\EventCheckIn\obj\Release\EventCheckIn.XmlSerializers.dll
+C:\Users\javier.garza\Documents\Visual Studio 2015\Projects\Kiosk\EventCheckIn\bin\EventCheckIn.dll.config
+N:\Tech Resources\Web\Kevin\Kiosk\EventCheckIn\bin\EventCheckIn.dll.config
+N:\Tech Resources\Web\Kevin\Kiosk\EventCheckIn\bin\EventCheckIn.dll
+N:\Tech Resources\Web\Kevin\Kiosk\EventCheckIn\bin\EventCheckIn.XmlSerializers.dll
+N:\Tech Resources\Web\Kevin\Kiosk\EventCheckIn\bin\EventCheckIn.pdb
+N:\Tech Resources\Web\Kevin\Kiosk\EventCheckIn\obj\Release\EventCheckIn.dll
+N:\Tech Resources\Web\Kevin\Kiosk\EventCheckIn\obj\Release\EventCheckIn.pdb
+N:\Tech Resources\Web\Kevin\Kiosk\EventCheckIn\obj\Release\EventCheckIn.XmlSerializers.dll
+N:\Tech Resources\Web\Kevin\Kiosk\EventCheckIn\obj\Release\EventCheckIn.csprojAssemblyReference.cache
+N:\Tech Resources\Web\Kevin\Kiosk\EventCheckIn\obj\Release\EventCheckIn.csproj.CoreCompileInputs.cache
+N:\Tech Resources\Web\Derek\Kiosk\EventCheckIn\bin\EventCheckIn.dll.config
+N:\Tech Resources\Web\Derek\Kiosk\EventCheckIn\bin\EventCheckIn.dll
+N:\Tech Resources\Web\Derek\Kiosk\EventCheckIn\bin\EventCheckIn.XmlSerializers.dll
+N:\Tech Resources\Web\Derek\Kiosk\EventCheckIn\bin\EventCheckIn.pdb
+N:\Tech Resources\Web\Derek\Kiosk\EventCheckIn\obj\Release\EventCheckIn.csprojAssemblyReference.cache
+N:\Tech Resources\Web\Derek\Kiosk\EventCheckIn\obj\Release\EventCheckIn.csproj.CoreCompileInputs.cache
+N:\Tech Resources\Web\Derek\Kiosk\EventCheckIn\obj\Release\EventCheckIn.dll
+N:\Tech Resources\Web\Derek\Kiosk\EventCheckIn\obj\Release\EventCheckIn.pdb
+N:\Tech Resources\Web\Derek\Kiosk\EventCheckIn\obj\Release\EventCheckIn.XmlSerializers.dll
+N:\Tech Resources\TechOnly\Web\Derek\Kiosk\EventCheckIn\obj\Release\EventCheckIn.csprojAssemblyReference.cache
+N:\Tech Resources\TechOnly\Web\Derek\Kiosk\EventCheckIn\obj\Release\EventCheckIn.csproj.CoreCompileInputs.cache
+N:\Tech Resources\TechOnly\Web\Derek\Kiosk\EventCheckIn\obj\Release\EventCheckIn.dll
+N:\Tech Resources\TechOnly\Web\Derek\Kiosk\EventCheckIn\obj\Release\EventCheckIn.pdb
+C:\Users\derek.montgomery\Desktop\Kiosk\EventCheckIn\bin\EventCheckIn.dll.config
+C:\Users\derek.montgomery\Desktop\Kiosk\EventCheckIn\bin\EventCheckIn.dll
+C:\Users\derek.montgomery\Desktop\Kiosk\EventCheckIn\bin\EventCheckIn.XmlSerializers.dll
+C:\Users\derek.montgomery\Desktop\Kiosk\EventCheckIn\bin\EventCheckIn.pdb
+C:\Users\derek.montgomery\Desktop\Kiosk\EventCheckIn\obj\Release\EventCheckIn.csprojAssemblyReference.cache
+C:\Users\derek.montgomery\Desktop\Kiosk\EventCheckIn\obj\Release\EventCheckIn.csproj.CoreCompileInputs.cache
+C:\Users\derek.montgomery\Desktop\Kiosk\EventCheckIn\obj\Release\EventCheckIn.dll
+C:\Users\derek.montgomery\Desktop\Kiosk\EventCheckIn\obj\Release\EventCheckIn.pdb
+C:\Users\derek.montgomery\Desktop\Kiosk\EventCheckIn\obj\Release\EventCheckIn.XmlSerializers.dll
+C:\Users\bherron\Desktop\Web\Kiosk\EventCheckIn\bin\EventCheckIn.dll.config
+C:\Users\bherron\Desktop\Web\Kiosk\EventCheckIn\bin\EventCheckIn.dll
+C:\Users\bherron\Desktop\Web\Kiosk\EventCheckIn\bin\EventCheckIn.XmlSerializers.dll
+C:\Users\bherron\Desktop\Web\Kiosk\EventCheckIn\bin\EventCheckIn.pdb
+C:\Users\bherron\Desktop\Web\Kiosk\EventCheckIn\obj\Release\EventCheckIn.csprojAssemblyReference.cache
+C:\Users\bherron\Desktop\Web\Kiosk\EventCheckIn\obj\Release\EventCheckIn.csproj.CoreCompileInputs.cache
+C:\Users\bherron\Desktop\Web\Kiosk\EventCheckIn\obj\Release\EventCheckIn.dll
+C:\Users\bherron\Desktop\Web\Kiosk\EventCheckIn\obj\Release\EventCheckIn.pdb
+C:\Users\bherron\Desktop\Web\Kiosk\EventCheckIn\obj\Release\EventCheckIn.XmlSerializers.dll
+C:\Users\bherron\Desktop\Kiosk\EventCheckIn\bin\EventCheckIn.dll.config
+C:\Users\bherron\Desktop\Kiosk\EventCheckIn\bin\EventCheckIn.dll
+C:\Users\bherron\Desktop\Kiosk\EventCheckIn\bin\EventCheckIn.XmlSerializers.dll
+C:\Users\bherron\Desktop\Kiosk\EventCheckIn\bin\EventCheckIn.pdb
+C:\Users\bherron\Desktop\Kiosk\EventCheckIn\obj\Release\EventCheckIn.csprojAssemblyReference.cache
+C:\Users\bherron\Desktop\Kiosk\EventCheckIn\obj\Release\EventCheckIn.dll
+C:\Users\bherron\Desktop\Kiosk\EventCheckIn\obj\Release\EventCheckIn.pdb
+C:\Users\bherron\Desktop\Kiosk\EventCheckIn\obj\Release\EventCheckIn.XmlSerializers.dll
+C:\Users\javier.garza\Desktop\Kiosk\EventCheckIn\bin\EventCheckIn.dll.config
+C:\Users\javier.garza\Desktop\Kiosk\EventCheckIn\bin\EventCheckIn.dll
+C:\Users\javier.garza\Desktop\Kiosk\EventCheckIn\bin\EventCheckIn.XmlSerializers.dll
+C:\Users\javier.garza\Desktop\Kiosk\EventCheckIn\bin\EventCheckIn.pdb
+C:\Users\javier.garza\Desktop\Kiosk\EventCheckIn\obj\Release\EventCheckIn.csprojAssemblyReference.cache
+C:\Users\javier.garza\Desktop\Kiosk\EventCheckIn\obj\Release\EventCheckIn.dll
+C:\Users\javier.garza\Desktop\Kiosk\EventCheckIn\obj\Release\EventCheckIn.pdb
+C:\Users\javier.garza\Desktop\Kiosk\EventCheckIn\obj\Release\EventCheckIn.XmlSerializers.dll
+C:\Users\bherron\Desktop\netframeworkupdate\Kiosk\EventCheckIn\bin\EventCheckIn.dll.config
+C:\Users\bherron\Desktop\netframeworkupdate\Kiosk\EventCheckIn\bin\EventCheckIn.dll
+C:\Users\bherron\Desktop\netframeworkupdate\Kiosk\EventCheckIn\bin\EventCheckIn.XmlSerializers.dll
+C:\Users\bherron\Desktop\netframeworkupdate\Kiosk\EventCheckIn\bin\EventCheckIn.pdb
+C:\Users\bherron\Desktop\netframeworkupdate\Kiosk\EventCheckIn\obj\Release\EventCheckIn.csprojAssemblyReference.cache
+C:\Users\bherron\Desktop\netframeworkupdate\Kiosk\EventCheckIn\obj\Release\EventCheckIn.csproj.CoreCompileInputs.cache
+C:\Users\bherron\Desktop\netframeworkupdate\Kiosk\EventCheckIn\obj\Release\EventCheckIn.dll
+C:\Users\bherron\Desktop\netframeworkupdate\Kiosk\EventCheckIn\obj\Release\EventCheckIn.pdb
+C:\Users\bherron\Desktop\netframeworkupdate\Kiosk\EventCheckIn\obj\Release\EventCheckIn.XmlSerializers.dll

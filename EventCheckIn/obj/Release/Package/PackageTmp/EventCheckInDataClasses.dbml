@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Kiosk_10-7-19" Class="EventCheckInDataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=daesa-db1.ad.wsu.edu;Initial Catalog=Kiosk;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="EventCheckInConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.AccessList" Member="AccessLists">
+    <Type Name="AccessList">
+      <Column Name="AccessListID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="WSUID" Type="System.String" DbType="VarChar(9)" CanBeNull="true" />
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IsManual" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="InsertDate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AcademicTerm" Member="AcademicTerms">
+    <Type Name="AcademicTerm">
+      <Column Name="TermID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Term" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EventPresenter" Member="EventPresenters">
+    <Type Name="EventPresenter">
+      <Column Name="PresenterID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PresenterName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EventID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PresenterList" Member="PresenterLists">
+    <Type Name="PresenterList">
+      <Column Name="PresenterID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SubmitDate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EventCategory" Member="EventCategories">
+    <Type Name="EventCategory">
+      <Column Name="EventCategoryID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Category" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CheckIn" Member="CheckIns">
+    <Type Name="CheckIn">
+      <Column Name="CheckInID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CIWSUID" Type="System.String" DbType="VarChar(9)" CanBeNull="true" />
+      <Column Name="CIApproved" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CIErrorMessage" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="CISubmitDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CIEventID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CIFirstName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CILastName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.timePicker" Member="timePickers">
+    <Type Name="timePicker">
+      <Column Name="tID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="timeString" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AdminList" Member="AdminLists">
+    <Type Name="AdminList">
+      <Column Name="AdminListID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="WSUID" Type="System.String" DbType="VarChar(9)" CanBeNull="true" />
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IsValid" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="SuperAdmin" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.workshops" Member="workshops">
+    <Type Name="workshop">
+      <Column Name="workshopID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="workshopName" Type="System.String" DbType="VarChar(64)" CanBeNull="true" />
+      <Column Name="workshopLocation" Type="System.String" DbType="VarChar(64)" CanBeNull="true" />
+      <Column Name="workshopDate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="workshopDescription" Type="System.String" DbType="VarChar(244)" CanBeNull="true" />
+      <Column Name="KioskID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Capacity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="StudentsRegistered" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsVisible" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="Event_workshop" Member="Event" ThisKey="KioskID" OtherKey="EventID" Type="Event" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.WorkshopRSVP" Member="WorkshopRSVPs">
+    <Type Name="WorkshopRSVP">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="WSUID" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="FullName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="VarChar(110)" CanBeNull="true" />
+      <Column Name="workshopNum" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KioskReasons" Member="KioskReasons">
+    <Type Name="KioskReason">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="KioskID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ReasonNum" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ReasonString" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="ReasonType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CheckInReasons" Member="CheckInReasons">
+    <Type Name="CheckInReason">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CheckInID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ReasonString" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Scholar" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Event" Member="Events">
+    <Type Name="Event">
+      <Column Name="EventID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EventName" Type="System.String" DbType="VarChar(128)" CanBeNull="true" />
+      <Column Name="UserNID" Type="System.String" DbType="VarChar(9)" CanBeNull="true" />
+      <Column Name="SubmitTime" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="EventDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="EventCategory" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="Term" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Reinstatement" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="QualtricsRedirectURL" Type="System.String" DbType="VarChar(512)" CanBeNull="true" />
+      <Column Name="DefaultNumPad" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ShowDateLabel" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="SecurityEnabled" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="Event_workshop" Member="workshops" ThisKey="EventID" OtherKey="KioskID" Type="workshop" />
+      <Association Name="Event_EventSecurity" Member="EventSecurities" ThisKey="EventID" OtherKey="EventID" Type="EventSecurity" />
+      <Association Name="Event_SecurityLog" Member="SecurityLogs" ThisKey="EventID" OtherKey="kioskID" Type="SecurityLog" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EventSecurity" Member="EventSecurities">
+    <Type Name="EventSecurity">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EventID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="pin" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Association Name="Event_EventSecurity" Member="Event" ThisKey="EventID" OtherKey="EventID" Type="Event" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SecurityLogs" Member="SecurityLogs">
+    <Type Name="SecurityLog">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="kioskID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="pinUsed" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="OnDate" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="[User]" Member="User" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="LoginAllowed" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="LoginIP" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="WSUID" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Association Name="Event_SecurityLog" Member="Event" ThisKey="kioskID" OtherKey="EventID" Type="Event" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+</Database>

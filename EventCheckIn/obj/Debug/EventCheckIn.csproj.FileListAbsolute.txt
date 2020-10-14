@@ -1,0 +1,97 @@
+c:\users\bluewood\documents\visual studio 2012\Projects\EventCheckIn\EventCheckIn\bin\EventCheckIn.dll
+c:\users\bluewood\documents\visual studio 2012\Projects\EventCheckIn\EventCheckIn\bin\EventCheckIn.pdb
+c:\users\bluewood\documents\visual studio 2012\Projects\EventCheckIn\EventCheckIn\obj\Debug\EventCheckIn.dll
+c:\users\bluewood\documents\visual studio 2012\Projects\EventCheckIn\EventCheckIn\obj\Debug\EventCheckIn.pdb
+C:\Users\bluewood\Documents\Visual Studio 2012\Projects\EventCheckIn\EventCheckIn\obj\Debug\EventCheckIn.csprojResolveAssemblyReference.cache
+C:\Users\bluewood\Desktop\Projects\EventCheckIn\EventCheckIn\bin\EventCheckIn.dll
+C:\Users\bluewood\Desktop\Projects\EventCheckIn\EventCheckIn\bin\EventCheckIn.pdb
+C:\Users\bluewood\Desktop\Projects\EventCheckIn\EventCheckIn\obj\Debug\EventCheckIn.dll
+C:\Users\bluewood\Desktop\Projects\EventCheckIn\EventCheckIn\obj\Debug\EventCheckIn.pdb
+C:\Users\bluewood\Desktop\Projects\EventCheckIn\EventCheckIn\obj\Debug\EventCheckIn.csprojResolveAssemblyReference.cache
+C:\Users\bluewood\Desktop\Projects\EventCheckIn 7.25.14 Modified interface and buttons for iPad\EventCheckIn\bin\EventCheckIn.dll
+C:\Users\bluewood\Desktop\Projects\EventCheckIn 7.25.14 Modified interface and buttons for iPad\EventCheckIn\bin\EventCheckIn.pdb
+C:\Users\bluewood\Desktop\Projects\EventCheckIn 7.25.14 Modified interface and buttons for iPad\EventCheckIn\obj\Debug\EventCheckIn.csprojResolveAssemblyReference.cache
+C:\Users\bluewood\Desktop\Projects\EventCheckIn 7.25.14 Modified interface and buttons for iPad\EventCheckIn\obj\Debug\EventCheckIn.dll
+C:\Users\bluewood\Desktop\Projects\EventCheckIn 7.25.14 Modified interface and buttons for iPad\EventCheckIn\obj\Debug\EventCheckIn.pdb
+C:\Users\bluewood\Desktop\Projects\EventCheckIn 7.28.14 Fixed button delay; Modified layout\EventCheckIn\bin\EventCheckIn.dll
+C:\Users\bluewood\Desktop\Projects\EventCheckIn 7.28.14 Fixed button delay; Modified layout\EventCheckIn\bin\EventCheckIn.pdb
+C:\Users\bluewood\Desktop\Projects\EventCheckIn 7.28.14 Fixed button delay; Modified layout\EventCheckIn\obj\Debug\EventCheckIn.csprojResolveAssemblyReference.cache
+C:\Users\bluewood\Desktop\Projects\EventCheckIn 7.28.14 Fixed button delay; Modified layout\EventCheckIn\obj\Debug\EventCheckIn.dll
+C:\Users\bluewood\Desktop\Projects\EventCheckIn 7.28.14 Fixed button delay; Modified layout\EventCheckIn\obj\Debug\EventCheckIn.pdb
+C:\Users\bluewood\Desktop\Projects\EventCheckIn 8.4.14 Added CIIsError column\EventCheckIn\bin\EventCheckIn.dll
+C:\Users\bluewood\Desktop\Projects\EventCheckIn 8.4.14 Added CIIsError column\EventCheckIn\bin\EventCheckIn.pdb
+C:\Users\bluewood\Desktop\Projects\EventCheckIn 8.4.14 Added CIIsError column\EventCheckIn\obj\Debug\EventCheckIn.csprojResolveAssemblyReference.cache
+C:\Users\bluewood\Desktop\Projects\EventCheckIn 8.4.14 Added CIIsError column\EventCheckIn\obj\Debug\EventCheckIn.dll
+C:\Users\bluewood\Desktop\Projects\EventCheckIn 8.4.14 Added CIIsError column\EventCheckIn\obj\Debug\EventCheckIn.pdb
+C:\Users\bluewood\Desktop\Projects\Kiosk\EventCheckIn\bin\EventCheckIn.dll
+C:\Users\bluewood\Desktop\Projects\Kiosk\EventCheckIn\bin\EventCheckIn.pdb
+C:\Users\bluewood\Desktop\Projects\Kiosk\EventCheckIn\obj\Debug\EventCheckIn.dll
+C:\Users\bluewood\Desktop\Projects\Kiosk\EventCheckIn\obj\Debug\EventCheckIn.pdb
+C:\Users\bluewood\Desktop\Projects\Kiosk\EventCheckIn\obj\Debug\EventCheckIn.csprojResolveAssemblyReference.cache
+C:\Users\javier.garza\Documents\Visual Studio 2010\Projects\Kiosk\EventCheckIn\bin\EventCheckIn.dll
+C:\Users\javier.garza\Documents\Visual Studio 2010\Projects\Kiosk\EventCheckIn\bin\EventCheckIn.pdb
+C:\Users\javier.garza\Documents\Visual Studio 2010\Projects\Kiosk\EventCheckIn\obj\Debug\EventCheckIn.dll
+C:\Users\javier.garza\Documents\Visual Studio 2010\Projects\Kiosk\EventCheckIn\obj\Debug\EventCheckIn.pdb
+C:\Users\javier.garza\Documents\Visual Studio 2010\Projects\Kiosk\EventCheckIn\obj\Debug\EventCheckIn.csprojResolveAssemblyReference.cache
+C:\Users\javier.garza\Documents\Visual Studio 2010\Projects\Kiosk\EventCheckIn\bin\EventCheckIn.dll.config
+C:\Users\javier.garza\Documents\Visual Studio 2015\Projects\Kiosk\EventCheckIn\obj\Debug\EventCheckIn.csprojResolveAssemblyReference.cache
+C:\Users\javier.garza\Documents\Visual Studio 2015\Projects\Kiosk\EventCheckIn\obj\Debug\EventCheckIn.dll
+C:\Users\javier.garza\Documents\Visual Studio 2015\Projects\Kiosk\EventCheckIn\bin\EventCheckIn.dll
+C:\Users\javier.garza\Documents\Visual Studio 2015\Projects\Kiosk\EventCheckIn\bin\EventCheckIn.pdb
+C:\Users\javier.garza\Documents\Visual Studio 2015\Projects\Kiosk\EventCheckIn\obj\Debug\EventCheckIn.pdb
+C:\Users\javier.garza\Documents\Visual Studio 2015\Projects\Kiosk\EventCheckIn\bin\EventCheckIn.dll.config
+N:\Tech Resources\Web\Kevin\Kiosk\EventCheckIn\bin\EventCheckIn.dll.config
+N:\Tech Resources\Web\Kevin\Kiosk\EventCheckIn\bin\EventCheckIn.dll
+N:\Tech Resources\Web\Kevin\Kiosk\EventCheckIn\bin\EventCheckIn.pdb
+N:\Tech Resources\Web\Kevin\Kiosk\EventCheckIn\obj\Debug\EventCheckIn.dll
+N:\Tech Resources\Web\Kevin\Kiosk\EventCheckIn\obj\Debug\EventCheckIn.pdb
+N:\Tech Resources\Web\Kevin\Kiosk\EventCheckIn\obj\Debug\EventCheckIn.csprojAssemblyReference.cache
+N:\Tech Resources\Web\Kevin\Kiosk\EventCheckIn\obj\Debug\EventCheckIn.csproj.CoreCompileInputs.cache
+N:\Tech Resources\Web\Derek\Kiosk\EventCheckIn\bin\EventCheckIn.dll.config
+N:\Tech Resources\Web\Derek\Kiosk\EventCheckIn\bin\EventCheckIn.dll
+N:\Tech Resources\Web\Derek\Kiosk\EventCheckIn\bin\EventCheckIn.pdb
+N:\Tech Resources\Web\Derek\Kiosk\EventCheckIn\obj\Debug\EventCheckIn.csproj.CoreCompileInputs.cache
+N:\Tech Resources\Web\Derek\Kiosk\EventCheckIn\obj\Debug\EventCheckIn.dll
+N:\Tech Resources\Web\Derek\Kiosk\EventCheckIn\obj\Debug\EventCheckIn.pdb
+N:\Tech Resources\Web\Derek\Kiosk\EventCheckIn\obj\Debug\EventCheckIn.csprojAssemblyReference.cache
+N:\Tech Resources\TechOnly\Web\Derek\Kiosk\EventCheckIn\bin\EventCheckIn.dll.config
+N:\Tech Resources\TechOnly\Web\Derek\Kiosk\EventCheckIn\bin\EventCheckIn.dll
+N:\Tech Resources\TechOnly\Web\Derek\Kiosk\EventCheckIn\bin\EventCheckIn.pdb
+N:\Tech Resources\TechOnly\Web\Derek\Kiosk\EventCheckIn\obj\Debug\EventCheckIn.csprojAssemblyReference.cache
+N:\Tech Resources\TechOnly\Web\Derek\Kiosk\EventCheckIn\obj\Debug\EventCheckIn.csproj.CoreCompileInputs.cache
+N:\Tech Resources\TechOnly\Web\Derek\Kiosk\EventCheckIn\obj\Debug\EventCheckIn.dll
+N:\Tech Resources\TechOnly\Web\Derek\Kiosk\EventCheckIn\obj\Debug\EventCheckIn.pdb
+C:\Users\derek.montgomery\Desktop\Kiosk\EventCheckIn\bin\EventCheckIn.dll.config
+C:\Users\derek.montgomery\Desktop\Kiosk\EventCheckIn\bin\EventCheckIn.dll
+C:\Users\derek.montgomery\Desktop\Kiosk\EventCheckIn\bin\EventCheckIn.pdb
+C:\Users\derek.montgomery\Desktop\Kiosk\EventCheckIn\obj\Debug\EventCheckIn.csprojAssemblyReference.cache
+C:\Users\derek.montgomery\Desktop\Kiosk\EventCheckIn\obj\Debug\EventCheckIn.csproj.CoreCompileInputs.cache
+C:\Users\derek.montgomery\Desktop\Kiosk\EventCheckIn\obj\Debug\EventCheckIn.dll
+C:\Users\derek.montgomery\Desktop\Kiosk\EventCheckIn\obj\Debug\EventCheckIn.pdb
+C:\Users\bherron\Desktop\Web\Kiosk\EventCheckIn\bin\EventCheckIn.dll.config
+C:\Users\bherron\Desktop\Web\Kiosk\EventCheckIn\bin\EventCheckIn.dll
+C:\Users\bherron\Desktop\Web\Kiosk\EventCheckIn\bin\EventCheckIn.pdb
+C:\Users\bherron\Desktop\Web\Kiosk\EventCheckIn\obj\Debug\EventCheckIn.csprojAssemblyReference.cache
+C:\Users\bherron\Desktop\Web\Kiosk\EventCheckIn\obj\Debug\EventCheckIn.csproj.CoreCompileInputs.cache
+C:\Users\bherron\Desktop\Web\Kiosk\EventCheckIn\obj\Debug\EventCheckIn.dll
+C:\Users\bherron\Desktop\Web\Kiosk\EventCheckIn\obj\Debug\EventCheckIn.pdb
+C:\Users\bherron\Desktop\Kiosk\EventCheckIn\bin\EventCheckIn.dll.config
+C:\Users\bherron\Desktop\Kiosk\EventCheckIn\bin\EventCheckIn.dll
+C:\Users\bherron\Desktop\Kiosk\EventCheckIn\bin\EventCheckIn.pdb
+C:\Users\bherron\Desktop\Kiosk\EventCheckIn\obj\Debug\EventCheckIn.csprojAssemblyReference.cache
+C:\Users\bherron\Desktop\Kiosk\EventCheckIn\obj\Debug\EventCheckIn.dll
+C:\Users\bherron\Desktop\Kiosk\EventCheckIn\obj\Debug\EventCheckIn.pdb
+C:\Users\bherron\Desktop\netframeworkupdate\Kiosk\EventCheckIn\bin\EventCheckIn.dll.config
+C:\Users\bherron\Desktop\netframeworkupdate\Kiosk\EventCheckIn\bin\EventCheckIn.dll
+C:\Users\bherron\Desktop\netframeworkupdate\Kiosk\EventCheckIn\bin\EventCheckIn.pdb
+C:\Users\bherron\Desktop\netframeworkupdate\Kiosk\EventCheckIn\obj\Debug\EventCheckIn.csprojAssemblyReference.cache
+C:\Users\bherron\Desktop\netframeworkupdate\Kiosk\EventCheckIn\obj\Debug\EventCheckIn.csproj.CoreCompileInputs.cache
+C:\Users\bherron\Desktop\netframeworkupdate\Kiosk\EventCheckIn\obj\Debug\EventCheckIn.dll
+C:\Users\bherron\Desktop\netframeworkupdate\Kiosk\EventCheckIn\obj\Debug\EventCheckIn.pdb
+M:\Production\Kiosk\EventCheckIn\bin\EventCheckIn.dll.config
+M:\Production\Kiosk\EventCheckIn\bin\EventCheckIn.dll
+M:\Production\Kiosk\EventCheckIn\bin\EventCheckIn.pdb
+M:\Production\Kiosk\EventCheckIn\obj\Debug\EventCheckIn.csprojAssemblyReference.cache
+M:\Production\Kiosk\EventCheckIn\obj\Debug\EventCheckIn.csproj.CoreCompileInputs.cache
+M:\Production\Kiosk\EventCheckIn\obj\Debug\EventCheckIn.dll
+M:\Production\Kiosk\EventCheckIn\obj\Debug\EventCheckIn.pdb

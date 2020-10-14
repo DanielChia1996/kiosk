@@ -1,0 +1,348 @@
+﻿/* For default page table layout
+   Usage: Add "class="login"" for the 1st td on Default.aspx */
+.login
+{
+    width:150px;
+}
+
+#pagecontainer
+{
+    height:100%;
+}
+
+#header /* The crimson header */
+{
+    background: #981e32; 
+    border-bottom: 1px solid #fff;
+    height: auto;
+    color: white; 
+    margin: 0 0 0 -100%;
+    padding: 2em 0 .5em 105%;
+    box-sizing: content-box;       
+}
+
+#body
+{
+    height:100%;
+}     
+         
+/* For time out */
+.ui-widget-content /* For timeout popup dialog */
+{
+    border: 2px solid #d7dadb;
+}
+
+.ui-dialog /* For timeout popup dialog */
+{
+    font-family: Arial;
+    background-color: #fff;
+    color: black;
+}
+
+.ui-dialog-content /* For timeout popup dialog content */
+{
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    overflow: auto;
+    position: relative;
+    padding: 0 !important;
+    margin: 0;
+}
+
+.ui-widget-header /* For timeout popup dialog header */
+{
+    background: #981e32;
+    border: 0;
+    color: #fff;
+    font-weight: normal;
+}
+
+.ui-dialog-titlebar /* For timeout popup dialog title*/
+{
+    font-weight: bold;
+}
+
+.ui-dialog-titlebar-close /* For timeout popup dialog titlebar*/
+{
+    margin-left: 120px;
+}
+
+#event
+{
+    margin: auto;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:25%;
+    text-align: center;
+    font-family:arial;
+	font-size:30px;
+}
+#checkin
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-family:arial;
+	font-size:30px;
+    top: 15px;
+    left: 10px;
+}
+#keypad {margin:auto;}
+
+#keypad tr td {
+	vertical-align:middle; 
+	text-align:center; 
+	font-size:40px; 
+	font-weight:bold; 
+	width:100px; 
+	height:40px; 
+	cursor:pointer; 
+	background-color:#666666; 
+	color:#ffffff;
+    -moz-border-radius: 5px;
+ border-radius: 5px;
+ -moz-box-shadow: 5px 5px 5px black;
+ -webkit-box-shadow: 5px 5px 5px black;
+ box-shadow: 5px 5px 5px black;
+}
+#keypad tr td:active
+{
+    background-color:#ebe9e9; color:#000000;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;  
+    -moz-user-select: none;
+-khtml-user-select: none;
+-ms-user-select: none;
+}
+.eventtextbox {
+	margin:auto auto auto auto; 
+	font-size:25px; 
+}
+.input {
+	width:200px; 
+    height:30px;
+	margin:auto auto auto auto; 
+	font-size:20px; 
+}
+.submitbutton {
+    -moz-box-shadow: 0px 10px 14px -7px #276873;
+    -webkit-box-shadow: 0px 10px 14px -7px #276873;
+    box-shadow: 0px 10px 14px -7px #276873;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05,#911723), color-stop(1, #408c99));
+    background: -moz-linear-gradient(top, #599bb3 5%, #408c99 100%);
+    background: -webkit-linear-gradient(top, #599bb3 5%, #408c99 100%);
+    background: -o-linear-gradient(top, #599bb3 5%, #408c99 100%);
+    background: -ms-linear-gradient(top, #599bb3 5%, #408c99 100%);
+    background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#599bb3', endColorstr='#408c99',GradientType=0);
+    background-color: #599bb3;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: arial;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 13px 32px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #3d768a;
+}
+.submitbutton:active {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;  
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #408c99), color-stop(1, #599bb3));
+	background:-moz-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:-webkit-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:-o-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:-ms-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#408c99', endColorstr='#599bb3',GradientType=0);
+	background-color:#408c99;
+}
+.blank_row /*blank row in table*/
+{
+    height: 20px !important; /* Overwrite any previous rules */
+}
+
+.style-one {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+.list-item-container{
+    background: #fff;
+    border-bottom: 1px solid #dedede;
+    cursor: pointer;
+    display: block;
+    padding: 10px 10px 10px 15px;
+    position: relative;
+}
+
+.list-item-picture-container{
+    user-select:none;
+    float:left;
+    font-weight: 700;
+    height:50px;
+    margin-right:15px;
+    text-align: center;
+    width: 50px;
+}
+
+.list-item-month{
+    border-top-left-radius: 3px;
+    border-top-right-radius:3px;
+    background:#de6444;
+    color: #fff;
+    font-size: 11px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.list-item-day{
+    border-bottom-left-radius:3px;
+    border-bottom-right-radius:3px;
+    background:#f4f4f4;
+    color:#797979;
+    font-size:14px;
+    line-height: 25px;
+}
+
+.event-date-header{
+    background:#f4f4f4;
+    color:#555;
+    font-size:12px;
+    letter-spacing:0.05em;
+    padding:8px;
+    text-transform:uppercase;
+    top:0;
+}
+
+.list-item-info{
+    padding-top:2px;
+    position:relative;
+}
+
+.list-item-title{
+    color:#0079ff;
+    font-size:16px;
+    line-height:22px;
+}
+
+.list-item-subtext{
+    font-size:13px;
+    line-height:1.5em;
+    color: #555;
+    
+}
+.list-item-available{
+    font-size:14px;
+    line-height:1.5em;
+    color: #555;
+    position:relative;
+}
+.event-month{
+    background: #de6444;
+    border-top-left-radius:3px;
+    border-top-right-radius: 3px;
+    box-shadow: 1px 0 0 #dedede;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 2px 0 1px;
+    text-transform: uppercase;
+    height:40px;
+}
+
+.event-wrapper {
+    width: 100px;
+    text-align: center;
+    height: 118px;
+}
+
+.event-day{
+    background: #f4f4f4;
+    border-bottom-left-radius:3px;
+    border-bottom-right-radius: 3px;
+    box-shadow: 1px 1px 0 #dedede;
+    color: #797979;
+    font-size: 45px;
+    font-weight:700;
+    padding:4px 0;
+    line-height: 1.3em;
+    height: 70px;
+    
+}
+.content-pane{
+    background:#fff;
+    border: 1px solid #dedede;
+    margin-bottom: 1em;
+    padding: 2em;
+    overflow: hidden;
+}
+
+.page-title{
+    font-size: 1.8em;
+    margin-bottom: 1rem;
+    text-align:left;
+    line-height:150%;   
+}
+.event-pic{
+    width: 100px;
+    float:left;
+    margin-right:1em;
+    text-align:center;
+
+}
+
+.content_wrapper{
+    overflow:hidden;
+}
+.detail-wrapper{
+    clear:both;
+   
+}
+em, i{
+    font-style:italic;
+}
+.detail-wrapper, .align{
+    line-height: 1.4em;
+    margin-bottom: 1.5em;
+    overflow:hidden;
+}
+
+body{
+    cursor: auto;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-weight:300;
+    position:relative;
+}
+
+.icon-location:before{
+    content: "\f097";
+}
+[class*="icon-"]:after, [class*= "icon-"]:before,[class^=icon-]:after,[class^=icon-]:before{
+    display:inline-block;
+    font-family:syncDings;
+    font-size:1.3em;
+    font-style:normal;
+    font-weight:400;
+    text-align:center;
+    text-decoration:inherit;
+    width:1.6em;
+}
+*,:after,:before{
+    box-sizing:border-box;
+}
+
+.Attendance{
+    font-weight:700;
+    font-size:16px;
+    
+}

@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="EventCheckIn.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="EventCheckIn_edu_wsu_aiswebservice_WSUADAuthenticateUser_WS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://aiswebservice.wsu.edu:443/WSUADAuthenticateUser_WS/WSUADAuthenticateUser_WS.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

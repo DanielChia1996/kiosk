@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 11.375" name="EventCheckInDataClasses">
+  <DataContextMoniker Name="/EventCheckInDataClassesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="c8a80722-2ce2-4b7a-ac2f-bdadd12677dd" absoluteBounds="5.125, 0.5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/EventCheckInDataClassesDataContext/AccessList" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9659591f-94aa-4e98-94e6-a5ddc4c428f0" absoluteBounds="5.14, 0.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="903f05b8-8955-447a-af1b-14573be548f9" absoluteBounds="0.75, 4, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/EventCheckInDataClassesDataContext/AcademicTerm" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c5e37f2c-5895-4ba1-9389-225a6c22065d" absoluteBounds="0.76499999999999968, 4.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="aac1bc44-215b-48eb-a4a6-bc6dc7727272" absoluteBounds="3, 3, 2, 1.3862939453125">
+      <DataClassMoniker Name="/EventCheckInDataClassesDataContext/EventPresenter" />
+      <nestedChildShapes>
+        <elementListCompartment Id="58fb73c6-5b13-4034-afce-44068a448aa2" absoluteBounds="3.0149999999999997, 3.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f9104ca8-fc7c-48b5-8043-0cb87d250a00" absoluteBounds="5.125, 2.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/EventCheckInDataClassesDataContext/PresenterList" />
+      <nestedChildShapes>
+        <elementListCompartment Id="57bc3fdb-49fa-424b-b963-02382eef6f2b" absoluteBounds="5.14, 3.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ac0dbd32-f3ff-452f-ab6f-fa87a33b4771" absoluteBounds="0.75, 5.25, 2, 1.3862939453125">
+      <DataClassMoniker Name="/EventCheckInDataClassesDataContext/EventCategory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="04b9da29-0745-436b-ae7d-670ff55c7d63" absoluteBounds="0.76499999999999968, 5.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="02c8edec-b1a3-4605-86ca-ac30263aa7d0" absoluteBounds="3, 0.5, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/EventCheckInDataClassesDataContext/CheckIn" />
+      <nestedChildShapes>
+        <elementListCompartment Id="53ce741f-3e57-4c39-9f20-edbf237304e4" absoluteBounds="3.0149999999999997, 0.96, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="678bc777-cb05-4909-9cfd-8d88cfd828db" absoluteBounds="7.25, 0.5, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/EventCheckInDataClassesDataContext/timePicker" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7ae37b02-b7bb-499f-8c44-8133f4fc5abf" absoluteBounds="7.2650000000000006, 0.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="55808bd2-0743-46da-b372-17fae3b38c6d" absoluteBounds="7.25, 2, 2, 1.9631982421875">
+      <DataClassMoniker Name="/EventCheckInDataClassesDataContext/AdminList" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5af1bf08-ed83-4e7e-b965-43c9e550dba2" absoluteBounds="7.2650000000000006, 2.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d59d7e60-5c87-4dc0-a3f6-de4526143486" absoluteBounds="3, 4.5, 2, 2.5401025390625">
+      <DataClassMoniker Name="/EventCheckInDataClassesDataContext/workshop" />
+      <nestedChildShapes>
+        <elementListCompartment Id="51b1ff09-5f87-4e00-8a23-2251b93fa7aa" absoluteBounds="3.015, 4.96, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1518e155-aa98-494e-a541-dcfdc185a132" absoluteBounds="5.125, 4.5, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/EventCheckInDataClassesDataContext/WorkshopRSVP" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4d056fde-1c6a-4ae2-90e8-d8af6ed5a21a" absoluteBounds="5.14, 4.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a1dae957-bbe6-43b0-ae6a-f99b87cb2c35" absoluteBounds="7.25, 4.125, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/EventCheckInDataClassesDataContext/KioskReason" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bcc9d76e-39d8-4743-b1cb-e644bfbbb7ab" absoluteBounds="7.2650000000000006, 4.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9f4e3359-795f-44c3-9e16-b094ef347089" absoluteBounds="7.25, 6, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/EventCheckInDataClassesDataContext/CheckInReason" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8a5d3865-373a-4c20-b76f-c7378524b000" absoluteBounds="7.2650000000000006, 6.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1d5c75c7-fc2d-441b-8324-24c8db70adc5" absoluteBounds="0.75, 0.5, 2, 3.1170068359375">
+      <DataClassMoniker Name="/EventCheckInDataClassesDataContext/Event" />
+      <nestedChildShapes>
+        <elementListCompartment Id="02b70ee2-9c0e-441f-adde-97e7d0005520" absoluteBounds="0.76500000000000057, 0.96, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.281252 : 3.6170068359375); (2.281252 : 3.9375); (2.8125 : 3.9375); (2.8125 : 5.77005126953125); (3 : 5.77005126953125)]" fixedFrom="Algorithm" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EventCheckInDataClassesDataContext/Event/Event_workshop" />
+      <nodes>
+        <classShapeMoniker Id="1d5c75c7-fc2d-441b-8324-24c8db70adc5" />
+        <classShapeMoniker Id="d59d7e60-5c87-4dc0-a3f6-de4526143486" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="fc5f28c5-bf6f-4499-992c-1695677e7117" absoluteBounds="3, 7.25, 2, 1.3862939453125">
+      <DataClassMoniker Name="/EventCheckInDataClassesDataContext/EventSecurity" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b78bcb01-dfdc-49c9-acd2-282a2c7392e2" absoluteBounds="3.0149999999999997, 7.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.75 : 3.6170068359375); (1.75 : 3.9375); (2.9375 : 3.9375); (2.9375 : 7.94314697265625); (3 : 7.94314697265625)]" fixedFrom="Algorithm" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EventCheckInDataClassesDataContext/Event/Event_EventSecurity" />
+      <nodes>
+        <classShapeMoniker Id="1d5c75c7-fc2d-441b-8324-24c8db70adc5" />
+        <classShapeMoniker Id="fc5f28c5-bf6f-4499-992c-1695677e7117" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="0b71375c-1a0a-45ad-bd74-c16530b41378" absoluteBounds="3, 8.75, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/EventCheckInDataClassesDataContext/SecurityLog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="73d2422b-4a3b-43a7-a312-329556c0d9b2" absoluteBounds="3.015, 9.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.218748 : 3.6170068359375); (1.218748 : 3.9375); (2.875 : 3.9375); (2.875 : 9.92390055338542); (3 : 9.92390055338542)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/EventCheckInDataClassesDataContext/Event/Event_SecurityLog" />
+      <nodes>
+        <classShapeMoniker Id="1d5c75c7-fc2d-441b-8324-24c8db70adc5" />
+        <classShapeMoniker Id="0b71375c-1a0a-45ad-bd74-c16530b41378" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

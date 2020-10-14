@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://it.wsu.edu/WSUADAuthenticateUser_WS/WSUADAuthenticateUser_WS" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://it.wsu.edu/WSUADAuthenticateUser_WS/WSUADAuthenticateUser_WS" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;This Web Service can be used to Authenticate a user and retrieve Active Directory information for the authenticated user.&lt;br /&gt;In order to consume this Web Service from a web application you must be using SSL (HTTPS) between the client and your web server.&lt;br /&gt;If SSL is not used, UserNames and Passwords can be intercepted and used by others in a malicious manor.&lt;/b&gt;</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://it.wsu.edu/WSUADAuthenticateUser_WS/WSUADAuthenticateUser_WS">
+      <s:element name="WSUAuthenticateUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strUserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strUserPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSUAuthenticateUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="WSUAuthenticateUserResult" type="tns:WSUAuthenticateUserReturnObj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="WSUAuthenticateUserReturnObj">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ReturnCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReturnMessage" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="UserIsAuthenticated" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="WSUAuthenticateUserGetADIdentityAttributes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strUserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strUserPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSUAuthenticateUserGetADIdentityAttributesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="WSUAuthenticateUserGetADIdentityAttributesResult" type="tns:WSUAuthenticateUserGetADIdentityAttributesReturnObj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="WSUAuthenticateUserGetADIdentityAttributesReturnObj">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ReturnCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReturnMessage" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="UserIsAuthenticated" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserWSUID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserDisplayName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserFullName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserLastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserFirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserEmail" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="WSUAuthenticateUserGetADGroupMemberships">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strUserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strUserPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSUAuthenticateUserGetADGroupMembershipsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="WSUAuthenticateUserGetADGroupMembershipsResult" type="tns:WSUAuthenticateUserGetADGroupMembershipsReturnObj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="WSUAuthenticateUserGetADGroupMembershipsReturnObj">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ReturnCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReturnMessage" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="UserIsAuthenticated" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserGroupMemberships" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="WSUAuthenticateUserIsInAnyADGroups">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strUserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strUserPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strGroupsArray" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="WSUAuthenticateUserIsInAnyADGroupsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="WSUAuthenticateUserIsInAnyADGroupsResult" type="tns:WSUAuthenticateUserIsInAnyADGroupsReturnObj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="WSUAuthenticateUserIsInAnyADGroupsReturnObj">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ReturnCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReturnMessage" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="UserIsAuthenticated" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="UserIsInAnyGroupsInd" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="WSUAuthenticateUserIsInAllADGroups">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strUserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strUserPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strGroupsArray" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSUAuthenticateUserIsInAllADGroupsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="WSUAuthenticateUserIsInAllADGroupsResult" type="tns:WSUAuthenticateUserIsInAllADGroupsReturnObj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="WSUAuthenticateUserIsInAllADGroupsReturnObj">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ReturnCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReturnMessage" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="UserIsAuthenticated" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="UserIsInAllGroupsInd" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="WSUAuthenticateUserGetADIdentityAttributesGetADGroupMemberships">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strUserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strUserPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSUAuthenticateUserGetADIdentityAttributesGetADGroupMembershipsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="WSUAuthenticateUserGetADIdentityAttributesGetADGroupMembershipsResult" type="tns:WSUAuthenticateUserGetADIdentityAttributesGetADGroupMembershipsReturnObj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="WSUAuthenticateUserGetADIdentityAttributesGetADGroupMembershipsReturnObj">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ReturnCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReturnMessage" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="UserIsAuthenticated" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserWSUID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserDisplayName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserFullName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserLastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserFirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserEmail" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserGroupMemberships" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="WSUAuthenticateUserGetADIdentityAttributesIsInAnyADGroups">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strUserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strUserPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strGroups" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSUAuthenticateUserGetADIdentityAttributesIsInAnyADGroupsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="WSUAuthenticateUserGetADIdentityAttributesIsInAnyADGroupsResult" type="tns:WSUAuthenticateUserGetADIdentityAttributesIsInAnyADGroupsReturnObj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="WSUAuthenticateUserGetADIdentityAttributesIsInAnyADGroupsReturnObj">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ReturnCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReturnMessage" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="UserIsAuthenticated" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserWSUID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserDisplayName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserFullName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserLastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserFirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserEmail" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="UserIsInAnyGroupInd" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="WSUAuthenticateUserGetADIdentityAttributesIsInAllADGroups">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strUserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strUserPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strGroups" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSUAuthenticateUserGetADIdentityAttributesIsInAllADGroupsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="WSUAuthenticateUserGetADIdentityAttributesIsInAllADGroupsResult" type="tns:WSUAuthenticateUserGetADIdentityAttributesIsInAllADGroupsReturnObj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="WSUAuthenticateUserGetADIdentityAttributesIsInAllADGroupsReturnObj">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ReturnCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReturnMessage" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="UserIsAuthenticated" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserWSUID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserDisplayName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserFullName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserLastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserFirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserEmail" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="UserIsInAllGroupsInd" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="WSUAuthenticateUserGetAnyGivenADAttributes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strUserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strUserPassword" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ArrayOfADAttributesToQuery" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WSUAuthenticateUserGetAnyGivenADAttributesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="WSUAuthenticateUserGetAnyGivenADAttributesResult" type="tns:WSUAuthenticateUserGetAnyGivenADAttributesReturnObj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="WSUAuthenticateUserGetAnyGivenADAttributesReturnObj">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ReturnCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReturnMessage" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="UserIsAuthenticated" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="ADAttributesReturnValue" type="tns:ArrayOfString" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="WSUAuthenticateUserSoapIn">
+    <wsdl:part name="parameters" element="tns:WSUAuthenticateUser" />
+  </wsdl:message>
+  <wsdl:message name="WSUAuthenticateUserSoapOut">
+    <wsdl:part name="parameters" element="tns:WSUAuthenticateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="WSUAuthenticateUserGetADIdentityAttributesSoapIn">
+    <wsdl:part name="parameters" element="tns:WSUAuthenticateUserGetADIdentityAttributes" />
+  </wsdl:message>
+  <wsdl:message name="WSUAuthenticateUserGetADIdentityAttributesSoapOut">
+    <wsdl:part name="parameters" element="tns:WSUAuthenticateUserGetADIdentityAttributesResponse" />
+  </wsdl:message>
+  <wsdl:message name="WSUAuthenticateUserGetADGroupMembershipsSoapIn">
+    <wsdl:part name="parameters" element="tns:WSUAuthenticateUserGetADGroupMemberships" />
+  </wsdl:message>
+  <wsdl:message name="WSUAuthenticateUserGetADGroupMembershipsSoapOut">
+    <wsdl:part name="parameters" element="tns:WSUAuthenticateUserGetADGroupMembershipsResponse" />
+  </wsdl:message>
+  <wsdl:message name="WSUAuthenticateUserIsInAnyADGroupsSoapIn">
+    <wsdl:part name="parameters" element="tns:WSUAuthenticateUserIsInAnyADGroups" />
+  </wsdl:message>
+  <wsdl:message name="WSUAuthenticateUserIsInAnyADGroupsSoapOut">
+    <wsdl:part name="parameters" element="tns:WSUAuthenticateUserIsInAnyADGroupsResponse" />
+  </wsdl:message>
+  <wsdl:message name="WSUAuthenticateUserIsInAllADGroupsSoapIn">
+    <wsdl:part name="parameters" element="tns:WSUAuthenticateUserIsInAllADGroups" />
+  </wsdl:message>
+  <wsdl:message name="WSUAuthenticateUserIsInAllADGroupsSoapOut">
+    <wsdl:part name="parameters" element="tns:WSUAuthenticateUserIsInAllADGroupsResponse" />
+  </wsdl:message>
+  <wsdl:message name="WSUAuthenticateUserGetADIdentityAttributesGetADGroupMembershipsSoapIn">
+    <wsdl:part name="parameters" element="tns:WSUAuthenticateUserGetADIdentityAttributesGetADGroupMemberships" />
+  </wsdl:message>
+  <wsdl:message name="WSUAuthenticateUserGetADIdentityAttributesGetADGroupMembershipsSoapOut">
+    <wsdl:part name="parameters" element="tns:WSUAuthenticateUserGetADIdentityAttributesGetADGroupMembershipsResponse" />
+  </wsdl:message>
+  <wsdl:message name="WSUAuthenticateUserGetADIdentityAttributesIsInAnyADGroupsSoapIn">
+    <wsdl:part name="parameters" element="tns:WSUAuthenticateUserGetADIdentityAttributesIsInAnyADGroups" />
+  </wsdl:message>
+  <wsdl:message name="WSUAuthenticateUserGetADIdentityAttributesIsInAnyADGroupsSoapOut">
+    <wsdl:part name="parameters" element="tns:WSUAuthenticateUserGetADIdentityAttributesIsInAnyADGroupsResponse" />
+  </wsdl:message>
+  <wsdl:message name="WSUAuthenticateUserGetADIdentityAttributesIsInAllADGroupsSoapIn">
+    <wsdl:part name="parameters" element="tns:WSUAuthenticateUserGetADIdentityAttributesIsInAllADGroups" />
+  </wsdl:message>
+  <wsdl:message name="WSUAuthenticateUserGetADIdentityAttributesIsInAllADGroupsSoapOut">
+    <wsdl:part name="parameters" element="tns:WSUAuthenticateUserGetADIdentityAttributesIsInAllADGroupsResponse" />
+  </wsdl:message>
+  <wsdl:message name="WSUAuthenticateUserGetAnyGivenADAttributesSoapIn">
+    <wsdl:part name="parameters" element="tns:WSUAuthenticateUserGetAnyGivenADAttributes" />
+  </wsdl:message>
+  <wsdl:message name="WSUAuthenticateUserGetAnyGivenADAttributesSoapOut">
+    <wsdl:part name="parameters" element="tns:WSUAuthenticateUserGetAnyGivenADAttributesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WSUADAuthenticateUser_WSSoap">
+    <wsdl:operation name="WSUAuthenticateUser">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Check UserName and Password against Active Directory for Authentication.&lt;br /&gt;Return type is WSUAuthenticateUserReturnObj.&lt;br /&gt;Return codes are as follows:&lt;br /&gt;0 = no errors, authentication successful&lt;br /&gt;2 - authentication successful but user info is restricted, message in return message&lt;br /&gt;4 - authentication failed, message in return message&lt;br /&gt;99 - exception occured, IT will be notified</wsdl:documentation>
+      <wsdl:input message="tns:WSUAuthenticateUserSoapIn" />
+      <wsdl:output message="tns:WSUAuthenticateUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WSUAuthenticateUserGetADIdentityAttributes">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Authenticate user and (if authentication is sucessful) return AD identity entries:&lt;br /&gt;WSU ID Number, Display Name, Full Name, Last Name, First Name, and Email address.&lt;br /&gt;Return type is WSUAuthenticateUserGetADAttributesReturnObj.&lt;br /&gt;Return codes are as follows:&lt;br /&gt;0 = no errors, authentication successful&lt;br /&gt;2 - authentication successful but user info is restricted, message in return message&lt;br /&gt;4 - authentication failed, message in return message&lt;br /&gt;99 - exception occured, IT will be notified</wsdl:documentation>
+      <wsdl:input message="tns:WSUAuthenticateUserGetADIdentityAttributesSoapIn" />
+      <wsdl:output message="tns:WSUAuthenticateUserGetADIdentityAttributesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WSUAuthenticateUserGetADGroupMemberships">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Authenticate user and (if authentication is sucessful) return a comma delimited list of AD groups that the user is a member of.&lt;br /&gt;Returns type is WSUAuthenticateUserGetADGroupMembershipsReturnObj.&lt;br /&gt;Return codes are as follows:&lt;br /&gt;0 = no errors, authentication successful&lt;br /&gt;2 - authentication successful but user info is restricted, message in return message&lt;br /&gt;4 - authentication failed, message in return message&lt;br /&gt;99 - exception occured, IT will be notified</wsdl:documentation>
+      <wsdl:input message="tns:WSUAuthenticateUserGetADGroupMembershipsSoapIn" />
+      <wsdl:output message="tns:WSUAuthenticateUserGetADGroupMembershipsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WSUAuthenticateUserIsInAnyADGroups">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Authenticate user and (if authentication is sucessful) check if user is a member of any of the AD groups specified.&lt;br /&gt; Return type is WSUAuthenticateUserIsInAnyADGroupsReturnObj.&lt;br /&gt;Return codes are as follows:&lt;br /&gt;0 = no errors, authentication successful&lt;br /&gt;2 - authentication successful but user info is restricted, message in return message&lt;br /&gt;4 - authentication failed, message in return message&lt;br /&gt;99 - exception occured, IT will be notified</wsdl:documentation>
+      <wsdl:input message="tns:WSUAuthenticateUserIsInAnyADGroupsSoapIn" />
+      <wsdl:output message="tns:WSUAuthenticateUserIsInAnyADGroupsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WSUAuthenticateUserIsInAllADGroups">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Authenticate user and (if authentication is sucessful) check if user is in all AD groups specified.&lt;br /&gt;Return type is WSUAuthenticateUserIsInAllADGroupsReturnObj.&lt;br /&gt;Return codes are as follows:&lt;br /&gt;0 = no errors, authentication successful&lt;br /&gt;2 - authentication successful but user info is restricted, message in return message&lt;br /&gt;4 - authentication failed, message in return message&lt;br /&gt;99 - exception occured, IT will be notified</wsdl:documentation>
+      <wsdl:input message="tns:WSUAuthenticateUserIsInAllADGroupsSoapIn" />
+      <wsdl:output message="tns:WSUAuthenticateUserIsInAllADGroupsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WSUAuthenticateUserGetADIdentityAttributesGetADGroupMemberships">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Authenticate user and (if authentication is sucessful) return AD user identity entries and group memberships.&lt;br /&gt;AD Identity Attributes are WSU ID Number, Display Name, Full Name, Last Name, First Name, and Email address.&lt;br /&gt;Return type is WSUAuthenticateUserGetADIdentityAttributesGetADGroupMembershipsReturnObj&lt;br /&gt;Return codes are as follows:&lt;br /&gt;0 = no errors, authentication successful&lt;br /&gt;2 - authentication successful but user info is restricted, message in return message&lt;br /&gt;4 - authentication failed, message in return message&lt;br /&gt;99 - exception occured, IT will be notified</wsdl:documentation>
+      <wsdl:input message="tns:WSUAuthenticateUserGetADIdentityAttributesGetADGroupMembershipsSoapIn" />
+      <wsdl:output message="tns:WSUAuthenticateUserGetADIdentityAttributesGetADGroupMembershipsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WSUAuthenticateUserGetADIdentityAttributesIsInAnyADGroups">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Authenticate user and (if authentication is sucessful) return AD user identity entries plus check to see if user is in ANY of the AD groups specified.&lt;br /&gt;Return type is WSUAuthenticateUserGetADIdentityAttributesIsInAnyADGroupsReturnObj&lt;br /&gt;Return codes are as follows:&lt;br /&gt;0 = no errors, authentication successful&lt;br /&gt;2 - authentication successful but user info is restricted, message in return message&lt;br /&gt;4 - authentication failed, message in return message&lt;br /&gt;99 - exception occured, IT will be notified</wsdl:documentation>
+      <wsdl:input message="tns:WSUAuthenticateUserGetADIdentityAttributesIsInAnyADGroupsSoapIn" />
+      <wsdl:output message="tns:WSUAuthenticateUserGetADIdentityAttributesIsInAnyADGroupsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WSUAuthenticateUserGetADIdentityAttributesIsInAllADGroups">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Authenticate user and (if authentication is sucessful) return AD user identity entries plus check to see if user is in ALL groups specified.&lt;br /&gt;Return type is WSUAuthenticateUserGetADIdentityAttributesIsInAllADGroupsReturnObj&lt;br /&gt;Return codes are as follows:&lt;br /&gt;0 = no errors, authentication successful&lt;br /&gt;2 - authentication successful but user info is restricted, message in return message&lt;br /&gt;4 - authentication failed, message in return message&lt;br /&gt;99 - exception occured, IT will be notified</wsdl:documentation>
+      <wsdl:input message="tns:WSUAuthenticateUserGetADIdentityAttributesIsInAllADGroupsSoapIn" />
+      <wsdl:output message="tns:WSUAuthenticateUserGetADIdentityAttributesIsInAllADGroupsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WSUAuthenticateUserGetAnyGivenADAttributes">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Authenticate user and (if authentication is sucessful) return value(s) of given AD attribute(s).&lt;br /&gt;Supply an array of attribute(s) with 1-n instances, and an array (ADAttributesReturnValue) of 1-n instances will be returned.&lt;br /&gt;Each attribute return value will be returned in the same indexed position as the input array (e.g. An input array with cn and displayName in the first two indexed positions will return the cn and displayname attributes in the same positions.&lt;br /&gt;Examples of AD attributes are: samAccountName, cn, mail, employeeID, givenName, displayName, employeeType, Title, department, wsuStudentMajor.&lt;br /&gt;Return type is WSUAuthenticateUserGetAnyGivenADAttributesReturnObj&lt;br /&gt;Return codes are as follows:&lt;br /&gt;0 = no errors, authentication successful&lt;br /&gt;2 - authentication successful but user info is restricted, message in return message&lt;br /&gt;4 - authentication failed, message in return message&lt;br /&gt;99 - exception occured, IT will be notified</wsdl:documentation>
+      <wsdl:input message="tns:WSUAuthenticateUserGetAnyGivenADAttributesSoapIn" />
+      <wsdl:output message="tns:WSUAuthenticateUserGetAnyGivenADAttributesSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSUADAuthenticateUser_WSSoap" type="tns:WSUADAuthenticateUser_WSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="WSUAuthenticateUser">
+      <soap:operation soapAction="http://it.wsu.edu/WSUADAuthenticateUser_WS/WSUADAuthenticateUser_WS/WSUAuthenticateUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSUAuthenticateUserGetADIdentityAttributes">
+      <soap:operation soapAction="http://it.wsu.edu/WSUADAuthenticateUser_WS/WSUADAuthenticateUser_WS/WSUAuthenticateUserGetADIdentityAttributes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSUAuthenticateUserGetADGroupMemberships">
+      <soap:operation soapAction="http://it.wsu.edu/WSUADAuthenticateUser_WS/WSUADAuthenticateUser_WS/WSUAuthenticateUserGetADGroupMemberships" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSUAuthenticateUserIsInAnyADGroups">
+      <soap:operation soapAction="http://it.wsu.edu/WSUADAuthenticateUser_WS/WSUADAuthenticateUser_WS/WSUAuthenticateUserIsInAnyADGroups" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSUAuthenticateUserIsInAllADGroups">
+      <soap:operation soapAction="http://it.wsu.edu/WSUADAuthenticateUser_WS/WSUADAuthenticateUser_WS/WSUAuthenticateUserIsInAllADGroups" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSUAuthenticateUserGetADIdentityAttributesGetADGroupMemberships">
+      <soap:operation soapAction="http://it.wsu.edu/WSUADAuthenticateUser_WS/WSUADAuthenticateUser_WS/WSUAuthenticateUserGetADIdentityAttributesGetADGroupMemberships" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSUAuthenticateUserGetADIdentityAttributesIsInAnyADGroups">
+      <soap:operation soapAction="http://it.wsu.edu/WSUADAuthenticateUser_WS/WSUADAuthenticateUser_WS/WSUAuthenticateUserGetADIdentityAttributesIsInAnyADGroups" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSUAuthenticateUserGetADIdentityAttributesIsInAllADGroups">
+      <soap:operation soapAction="http://it.wsu.edu/WSUADAuthenticateUser_WS/WSUADAuthenticateUser_WS/WSUAuthenticateUserGetADIdentityAttributesIsInAllADGroups" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSUAuthenticateUserGetAnyGivenADAttributes">
+      <soap:operation soapAction="http://it.wsu.edu/WSUADAuthenticateUser_WS/WSUADAuthenticateUser_WS/WSUAuthenticateUserGetAnyGivenADAttributes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSUADAuthenticateUser_WSSoap12" type="tns:WSUADAuthenticateUser_WSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="WSUAuthenticateUser">
+      <soap12:operation soapAction="http://it.wsu.edu/WSUADAuthenticateUser_WS/WSUADAuthenticateUser_WS/WSUAuthenticateUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSUAuthenticateUserGetADIdentityAttributes">
+      <soap12:operation soapAction="http://it.wsu.edu/WSUADAuthenticateUser_WS/WSUADAuthenticateUser_WS/WSUAuthenticateUserGetADIdentityAttributes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSUAuthenticateUserGetADGroupMemberships">
+      <soap12:operation soapAction="http://it.wsu.edu/WSUADAuthenticateUser_WS/WSUADAuthenticateUser_WS/WSUAuthenticateUserGetADGroupMemberships" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSUAuthenticateUserIsInAnyADGroups">
+      <soap12:operation soapAction="http://it.wsu.edu/WSUADAuthenticateUser_WS/WSUADAuthenticateUser_WS/WSUAuthenticateUserIsInAnyADGroups" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSUAuthenticateUserIsInAllADGroups">
+      <soap12:operation soapAction="http://it.wsu.edu/WSUADAuthenticateUser_WS/WSUADAuthenticateUser_WS/WSUAuthenticateUserIsInAllADGroups" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSUAuthenticateUserGetADIdentityAttributesGetADGroupMemberships">
+      <soap12:operation soapAction="http://it.wsu.edu/WSUADAuthenticateUser_WS/WSUADAuthenticateUser_WS/WSUAuthenticateUserGetADIdentityAttributesGetADGroupMemberships" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSUAuthenticateUserGetADIdentityAttributesIsInAnyADGroups">
+      <soap12:operation soapAction="http://it.wsu.edu/WSUADAuthenticateUser_WS/WSUADAuthenticateUser_WS/WSUAuthenticateUserGetADIdentityAttributesIsInAnyADGroups" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSUAuthenticateUserGetADIdentityAttributesIsInAllADGroups">
+      <soap12:operation soapAction="http://it.wsu.edu/WSUADAuthenticateUser_WS/WSUADAuthenticateUser_WS/WSUAuthenticateUserGetADIdentityAttributesIsInAllADGroups" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WSUAuthenticateUserGetAnyGivenADAttributes">
+      <soap12:operation soapAction="http://it.wsu.edu/WSUADAuthenticateUser_WS/WSUADAuthenticateUser_WS/WSUAuthenticateUserGetAnyGivenADAttributes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSUADAuthenticateUser_WS">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;This Web Service can be used to Authenticate a user and retrieve Active Directory information for the authenticated user.&lt;br /&gt;In order to consume this Web Service from a web application you must be using SSL (HTTPS) between the client and your web server.&lt;br /&gt;If SSL is not used, UserNames and Passwords can be intercepted and used by others in a malicious manor.&lt;/b&gt;</wsdl:documentation>
+    <wsdl:port name="WSUADAuthenticateUser_WSSoap" binding="tns:WSUADAuthenticateUser_WSSoap">
+      <soap:address location="https://aiswebservice.wsu.edu:443/WSUADAuthenticateUser_WS/WSUADAuthenticateUser_WS.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WSUADAuthenticateUser_WSSoap12" binding="tns:WSUADAuthenticateUser_WSSoap12">
+      <soap12:address location="https://aiswebservice.wsu.edu:443/WSUADAuthenticateUser_WS/WSUADAuthenticateUser_WS.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
